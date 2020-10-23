@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="Custom_Notification_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.zigzag.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Czz-jX-o7N">
+                                <rect key="frame" x="0.0" y="1" width="320" height="297.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8OA-Bg-aNG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Czz-jX-o7N" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="Idh-rV-1k0"/>
+                            <constraint firstItem="Czz-jX-o7N" firstAttribute="bottom" secondItem="2BE-c3-nQJ" secondAttribute="bottom" id="OH0-KH-mNI"/>
+                            <constraint firstItem="Czz-jX-o7N" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="OHI-pM-cxI"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="Czz-jX-o7N" secondAttribute="bottom" id="aDN-N3-gyU"/>
+                            <constraint firstItem="Czz-jX-o7N" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="cqa-5p-zPT"/>
+                            <constraint firstItem="Czz-jX-o7N" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="k02-vY-9OS"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="Czz-jX-o7N" secondAttribute="trailing" id="r7u-3D-d5O"/>
+                            <constraint firstItem="Czz-jX-o7N" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="vSF-gC-YuI"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.zigzag.forward" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
