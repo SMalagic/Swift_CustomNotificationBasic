@@ -18,12 +18,10 @@ class ViewController: UIViewController {
     @IBAction func notifiTapped(_ sender: Any) {
         
         
-        
         //MARK:- Gösterilecek Seçenekler
-        let yes = UNNotificationAction(identifier: "option1", title: "Option 1", options: .foreground)
-        let no = UNNotificationAction(identifier: "option2", title: "Option 2", options: .foreground)
-        let cancel = UNNotificationAction(identifier: "option3", title: "Cancel", options: .destructive)
-        
+        let yes = UNNotificationAction(identifier: "option1", title: "Kitaplığıma Ekle", options: .foreground)
+        let no = UNNotificationAction(identifier: "option2", title: "Diğer Filmler", options: .foreground)
+        let cancel = UNNotificationAction(identifier: "option3", title: "Paylaş", options: .destructive)
         
         let category = UNNotificationCategory(identifier: "testNotificationCategory", actions: [yes, no, cancel], intentIdentifiers: [], options: [])
 
@@ -33,8 +31,8 @@ class ViewController: UIViewController {
         //MARK: - Bildirim İçeriği
         let content = UNMutableNotificationContent()
         
-        content.title              = "Bildirim Header"
-        content.subtitle           = "bildirim subtitle"
+        content.title              = "Sizin için önerdiğimiz filmler"
+        content.subtitle           = "daha fazla bilgi için aşağı çekin"
         content.categoryIdentifier = "testNotificationCategory"
         content.sound              = .default
         
